@@ -1,5 +1,5 @@
-PROMPT='%(!.%{$fg_bold[red]%}%m.%{$fg_bold[red]%}%m): %{$fg_bold[blue]%}%~
-%{$reset_color%}→ '
+PROMPT='%(!.{$fg_bold[red]%}%m.%{$bg[red]%}%{$fg_bold[white]%}%m):%{$reset_color%} %{$fg_bold[blue]%}%~
+%{$fg[red]%}→ %{$reset_color%}'
 RPROMPT='%{$fg_bold[magenta]%}%(1j.[%j] .)%{$reset_color%}$(svn_prompt_info)$(git_prompt_info)'
 
 function git_prompt_info() {
